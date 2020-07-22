@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+}
+
+.todo_box {
+  width: 100px;
+  height: 100px;
+  background-color: coral;
+  border-radius: 10px;
+  top : 500px;
+  left : 600px;
+  position : relative;
+
+  /* TODO */
+  /* 포지션 구현하기 */
+}
+.goal {
+  width: 300px;
+  height: 300px;
+  border: 3px dashed coral;
+  border-radius: 10px;
+
+  position: relative;
+  top: 300px;
+  left: 500px;
+}
