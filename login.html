@@ -5,32 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
+    <div class="title">
+        <h2>LOG IN</h2>
+        <hr>
+    </div>
     <form action="https://media.makeameme.org/created/login-failures-login.jpg">
-        <div>
-            <label for="userid_input">아이디 : </label>
-            <input type="text" name='userid' placeholder='아이디를 입력하세요'>
-            <br>
-            <br>
-            <label for="password_input">비밀번호 : </label>
-            <input type="password" name='password' placeholder='비밀번호를 입력하세요'>
-            <button name='login'>login</button>
+        <div class='login'>
+            <label class="id_label" for="userid_input">아이디 : </label>
+            <input class="id" type="text" name='userid' placeholder='아이디를 입력하세요'>
+
+            <label class="pw_lable" for="password_input">비밀번호 : </label>
+            <input class="pw" type="password" name='password' placeholder='비밀번호를 입력하세요'>
+            <button name='login' class="login_button">login</button>
         </div>
         <br>
-        <br>
-        <div>
-            <label for="password_q">비밀번호 질문 : </label>
-            <select name="password">
+        <div class='q'>
+            <label class="q_label" for="password_q">비밀번호 질문 : </label>
+            <select name="password" class="question">
                 <option value="question1">question1</option>
                 <option value="question2">question2</option>
             </select>
+            <input type="text" class="answer" placeholder="input answer">
         </div>
         <br>
-        <br>
         <div>
-            <textarea name="introduce" cols="50" rows="30">self introduce</textarea>
+            <textarea class="text" name="introduce" cols="40" rows="30">self introduce</textarea>
         </div>
     </form>
 </body>
